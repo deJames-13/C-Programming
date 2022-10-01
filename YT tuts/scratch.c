@@ -4,7 +4,7 @@
 
 int main(int argc, char const *argv[])
 {
-    char str[10];
-    printf("Lol %s", str);
+    printf("This is a scratch.\n");
+    printf("To compile do gcc <C file dir> -o <Executable file dir/name>");
     return 0;
 }
