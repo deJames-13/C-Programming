@@ -30,12 +30,12 @@ int main()
 {
     printf("\n");
     struct Node a, b, c, d, e, f;
-    a.data = 'P';
-    b.data = 'U';
-    c.data = 'T';
-    d.data = 'A';
-    e.data = 'K';
-    f.data = 'A';
+    a.data = 'A';
+    b.data = 'B';
+    c.data = 'C';
+    d.data = 'D';
+    e.data = 'E';
+    f.data = 'F';
     a.nextNode = &b;
     b.nextNode = &c;
     c.nextNode = &d;
