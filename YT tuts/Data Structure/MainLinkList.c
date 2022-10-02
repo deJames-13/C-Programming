@@ -12,6 +12,7 @@ struct LinkedList
 };
 void showNode(struct Node node)
 {
+    // printf("%c\t", node.data);
     printf("<Node: %c>\n", node.data);
 }
 void showHead(struct LinkedList *l)
@@ -20,20 +21,37 @@ void showHead(struct LinkedList *l)
     showNode(*l->head);
 }
 
+char showData(struct Node node)
+{
+    return node.data;
+}
+
 int main()
 {
-    struct Node a, b, c;
-    a.data = 'A';
-    c.data = 'C';
-    b.data = 'B';
+    printf("\n");
+    struct Node a, b, c, d, e, f;
+    a.data = 'P';
+    b.data = 'U';
+    c.data = 'T';
+    d.data = 'A';
+    e.data = 'K';
+    f.data = 'A';
     a.nextNode = &b;
     b.nextNode = &c;
+    c.nextNode = &d;
+    d.nextNode = &e;
+    e.nextNode = &f;
 
     struct LinkedList mylist;
     mylist.head = &a;
 
-    showHead(&mylist);
+    showNode(*mylist.head);
     showNode(*mylist.head->nextNode);
     showNode(*mylist.head->nextNode->nextNode);
+    showNode(*mylist.head->nextNode->nextNode->nextNode);
+    showNode(*mylist.head->nextNode->nextNode->nextNode->nextNode);
+    showNode(*mylist.head->nextNode->nextNode->nextNode->nextNode->nextNode);
+
+    printf("\n");
     return 0;
 }
