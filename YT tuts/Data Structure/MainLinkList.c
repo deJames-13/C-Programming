@@ -12,8 +12,8 @@ struct LinkedList
 };
 void showNode(struct Node node)
 {
-    // printf("%c\t", node.data);
-    printf("<Node: %c>\n", node.data);
+    printf("%c->\t", node.data);
+    // printf("<Node: %c>\n", node.data);
 }
 void showHead(struct LinkedList *l)
 {
