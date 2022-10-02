@@ -8,10 +8,15 @@ int main()
 
     FILE *pReadFile = fopen("../reminder.txt", "r");
     char buffer[255];
-
-    while (fgets(buffer, 255, pReadFile) != NULL)
+    if (pReadFile == NULL)
     {
-        printf(buffer);
+    }
+    else
+    {
+        while (fgets(buffer, 255, pReadFile) != NULL)
+        {
+            printf(buffer);
+        }
     }
 
     fclose(pReadFile);
