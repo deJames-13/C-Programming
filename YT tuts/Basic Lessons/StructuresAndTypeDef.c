@@ -16,6 +16,7 @@ typedef struct
 int main()
 {
     struct Person person1;
+    struct Person person3 = {"Wyn", 21};
     User person2;
 
     strcpy(person1.name, "Jak");
@@ -24,6 +25,7 @@ int main()
     person2.id = 23123;
 
     printf("\nName: %s, Age: %d", person1.name, person1.age);
+    printf("\nName: %s, Age: %d", person3.name, person3.age);
     printf("\nUser: %s, ID: %d", person2.name, person2.id);
 
     return 0;
