@@ -6,9 +6,8 @@
 #define ROWS 2
 #define COLS 2
 
-int main()
+void input_array(int data[ROWS][COLS])
 {
-    int data[ROWS][COLS] = {0};
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
@@ -19,7 +18,10 @@ int main()
             data[i][j] = input;
         }
     }
-    printf("\n");
+}
+
+void print_array(int data[ROWS][COLS])
+{
     for (int i = 0; i < ROWS; i++)
     {
         for (int j = 0; j < COLS; j++)
@@ -27,5 +29,14 @@ int main()
             printf("data[%d][%d] = %d\n", i, j, data[i][j]);
         }
     }
+}
+
+int main()
+{
+    int data[ROWS][COLS] = {0};
+    input_array(data);
+    printf("\n");
+    print_array(data);
+
     return 0;
 }
