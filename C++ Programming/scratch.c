@@ -13,12 +13,15 @@ int main()
 
     !!! Strings must always have an initial value !!!
     */
-    char name[] = "";
+    char name[64] = "";
 
     printf("Enter your name: ");
     scanf("%s", &name); // %s is the formatter for strings
+    int age = 0;
+    printf("Enter your age: ");
+    scanf("%d", &age);
 
-    printf("\nHello, %s\n", name);
+    printf("\nHello, %s!\nYou are %d years old.\n", name, age);
 
     return 0;
 }
