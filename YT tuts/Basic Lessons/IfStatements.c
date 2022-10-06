@@ -3,8 +3,8 @@
 
 int main()
 {
-    char unit;
-    float temp;
+    char unit{};
+    float temp{};
 
     printf("Enter the unit (C for Celsius, F for Farenheit): ");
     scanf("%c", &unit);
@@ -26,6 +26,5 @@ int main()
     {
         printf("\nUnit is not recognized.");
     }
-
     return 0;
 }
