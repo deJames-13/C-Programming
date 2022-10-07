@@ -3,6 +3,7 @@
 int main()
 {
     // SWITCH Statement - are statements that are like if statements but uses switch - case syntax
+    // Case can only accept a character or an integer
     int number = 0;
     printf("type 1: ");
     scanf("%d", &number);
