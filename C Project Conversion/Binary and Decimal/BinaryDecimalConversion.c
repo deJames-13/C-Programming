@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
+
+#define SIZE 25
 
 int main()
 {
     int iOption, iDecimal;
-    char iBinary[] = "";
+    char sBinary[SIZE] = "";
     printf("*****************************************\n");
     printf("*\tBinary - Decimal Conversion\n");
     printf("*****************************************\n");
@@ -23,10 +26,11 @@ int main()
             break;
         case 1:
         repeat:
-            printf("Input (-1 to stop): ");
+            printf("\nInput (-1 to stop): ");
             scanf("%d", &iDecimal);
             if (iDecimal < 0)
             {
+                printf("Quitting..\n");
                 break;
             }
 
@@ -47,22 +51,40 @@ int main()
             printf("[Output]: %s\n", current);
             goto repeat;
         case 2:
-            printf("Input (-1 to stop): ");
-            scanf("%s", &iBinary);
-            if (iBinary < 0)
+        repeat2:
+            printf("\nInput (q to stop): ");
+            scanf("%s", &sBinary);
+
+            if (sBinary[0] == 'q')
             {
+                printf("Quitting..\n");
                 break;
             }
-            char temp2[] = "";
-            char current2[] = "";
-            for (int i = 0; i < strlen(iBinary); i++)
+            int len = sizeof(sBinary);
+            int calc = 0;
+            strrev(sBinary);
+            for (int i = 0; i < len; i++)
             {
-                printf("%s\n", i);
+                if (!(sBinary[i]))
+                {
+                    break;
+                }
+                if (sBinary[i] == '0' || sBinary[i] == '1')
+                {
+                    if (sBinary[i] == '1')
+                    {
+                        calc += pow(2, i);
+                    }
+                }
+                else
+                {
+                    printf("Cannot interpret the binary.\nPlease try again.\n");
+                    goto repeat2;
+                }
             }
+            printf("[Output]: %d\n", calc);
 
-            // printf("[Output]: %s\n", current);
-
-            break;
+            goto repeat2;
 
         default:
             printf("That is not in the Option!!\n");
