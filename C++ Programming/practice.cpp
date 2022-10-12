@@ -117,17 +117,13 @@ int main()
             {
                 continue;
             }
-            else if (answer == 'N')
-            {
-                break;
-            }
         }
         else
         {
             break;
         }
 
-    } while (1);
+    } while (answer == 'Y');
     cout << "\nProgram stopped.\n";
     return 0;
 }
