@@ -48,7 +48,7 @@ checkpoint:
                     cin >> choice;
                 } while (choice != 'Y' && choice != 'N');
                 // system("cls");
-            } while (choice != 'Y');
+            } while (choice == 'Y');
             goto checkpoint;
             break;
 
