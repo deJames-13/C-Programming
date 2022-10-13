@@ -14,7 +14,7 @@ Its incremental or decremental value is fixed.
 void main()
 {
 
-    // Example 1
+    // Example 1: Count Up
     // A code that takes an integer input and displays a counter that counts from 0 to that number.
     printf("\nExample 1:\n");
     printf("A code that takes an integer input and displays a counter that counts from 0 to that number.\n\n");
@@ -31,7 +31,7 @@ startExample1:
         goto startExample1;
     }
 
-    // Example 2
+    // Example 2: Count Down
     // A code that takes an integer input and displays a counter starts from the number to 0.
     printf("\nExample 2:\n");
     printf("A code that takes an integer input and displays a counter starts from the number to 0.\n\n");
@@ -48,7 +48,7 @@ startExample2:
         goto startExample2;
     }
 
-    // Example 3
+    // Example 3: Multiple Print
     // A code that takes an integer input and prints Hello, World by that times.
     printf("\nExample 3:\n");
     printf("A code that takes an integer input and prints Hello, World by that times. \n\n");
