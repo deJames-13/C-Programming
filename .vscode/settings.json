@@ -2,7 +2,8 @@
   "files.associations": {
     "*html": "html",
     "ctype.h": "c",
-    "string.h": "c"
+    "string.h": "c",
+    "stdio.h": "c"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }
