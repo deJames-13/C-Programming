@@ -4,24 +4,33 @@
 
 void main()
 {
+    // DECLARATION OF VARIABLEs
     int age;
     char ans;
-    int cKid = 0;
+
+    // pinaghiwahiwalay based sa age condition
+    // cKid: < 13
+    // cTeenager: < 20
+    // cAdult: < 60
+    // cOld: >= 60
+    int cKid = 0; // c for counter; can be read as "counter for Kid" (cKid)
     int cTeenager = 0;
     int cAdult = 0;
     int cOld = 0;
 
 repeat:
+    // INPUTS
     printf("\nEnter your age: ");
     scanf("%d", &age);
-    char *output = "";
+    char *output = ""; // A STRING/TEXT VARIABLE to set the message after the process
 
-    if (age > 0)
+    if (age > 0) // checks if age is not negative
     {
+        // PROCESS
         if (age < 13)
         {
-            output = "You aren't a teenager.";
-            cKid += 1;
+            output = "You aren't a teenager."; // changing of output
+            cKid += 1;                         // incrementing counters
         }
         else if (age < 20)
         {
@@ -38,6 +47,8 @@ repeat:
             output = "You are past the middle age.";
             cOld += 1;
         }
+
+        // OUTPUTS
         printf("\nYou are %d years old.\n", age);
         printf("\n%s.\n", output);
 
