@@ -3,7 +3,8 @@
     "*html": "html",
     "ctype.h": "c",
     "string.h": "c",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "conio.h": "c"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }

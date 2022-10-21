@@ -14,7 +14,7 @@ repeat:
     scanf("%f", &price);
     scanf("");
     printf("Enter the quantity of the product: ");
-    printf("%f\n", quant);
+    scanf("%f", &quant);
 
     netAmt = price * quant;
     std = netAmt * TAX_RATE;

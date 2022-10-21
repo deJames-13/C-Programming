@@ -7,6 +7,10 @@ void main()
     int grade;
     char letterGrade;
     char ans;
+    char *remark;
+    // Counters
+    // 1: A, 2: B, 3: C, 4: D, 5: F, 6: PASSED, 7: FAILED
+    int c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0, c7 = 0;
 
 repeat:
     // I: Input the grade
@@ -34,6 +38,14 @@ repeat:
         default:
             letterGrade = 'F';
             break;
+        }
+        if (grade >= 60)
+        {
+            remark = "PASSED";
+        }
+        else
+        {
+            remark = "FAILED";
         }
     }
     else
