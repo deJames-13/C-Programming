@@ -8,8 +8,7 @@ void main()
     char letterGrade;
     char ans;
     char *remark;
-    // Counters (c for counter)
-    // 1: A, 2: B, 3: C, 4: D, 5: F, 6: PASSED, 7: FAILED
+    // Counters (c for counter) 1: A, 2: B, 3: C, 4: D, 5: F, 6: PASSED, 7: FAILED
     int c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0, c7 = 0;
 
 repeat:
@@ -31,8 +30,8 @@ repeat:
         switch (grade)
         {
         case 90 ... 100:
-            letterGrade = 'A'; // Assigning the equivalent letter
-            c1 += 1;           // incrementing the counter for equivalent letter
+            letterGrade = 'A';
+            c1 += 1;
             break;
         case 80 ... 89:
             letterGrade = 'B';
@@ -87,6 +86,7 @@ ask:
     ans = getch();
     if (ans == 'Y' || ans == 'y')
     {
+        // system("cls");
         goto repeat;
     }
     else if (ans == 'N' || ans == 'n')
