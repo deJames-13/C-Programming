@@ -17,6 +17,13 @@ repeat:
     printf("\nEnter the student's grade: ");
     scanf("%d", &grade);
 
+    // if the number is negative, end the process
+    if (grade < 0)
+    {
+        printf("Value is negative.\nProgram Terminated.\n");
+        exit(0);
+    }
+
     // Checks if the grade is in the range of 0 to 100, 0 and over 100 are invalid;
     if (grade > 0 && grade <= 100)
     {
@@ -24,28 +31,35 @@ repeat:
         switch (grade)
         {
         case 90 ... 100:
-            letterGrade = 'A';
+            letterGrade = 'A'; // Assigning the equivalent letter
+            c1 += 1;           // incrementing the counter for equivalent letter
             break;
         case 80 ... 89:
             letterGrade = 'B';
+            c2 += 1;
             break;
         case 70 ... 79:
             letterGrade = 'C';
+            c3 += 1;
             break;
         case 60 ... 69:
             letterGrade = 'D';
+            c4 += 1;
             break;
         default:
             letterGrade = 'F';
+            c5 += 1;
             break;
         }
         if (grade >= 60)
         {
             remark = "PASSED";
+            c6 += 1;
         }
         else
         {
             remark = "FAILED";
+            c7 += 1;
         }
     }
     else
@@ -55,8 +69,17 @@ repeat:
         goto repeat;
     }
 
-    // O: Outputs the equivalent letter for the grade.
+    // O: Outputs the equivalent letter for the grade and counters.
     printf("The letter grade equivalent is: %c\n", letterGrade);
+    printf("Remark: %s\n", remark);
+    printf("\nCounted Values for the number of students who got, \n");
+    printf("A: %d\n", c1);
+    printf("B: %d\n", c2);
+    printf("C: %d\n", c3);
+    printf("D: %d\n", c4);
+    printf("F: %d\n", c5);
+    printf("PASSED: %d\n", c6);
+    printf("FAILED: %d\n", c7);
 
 // asks the user to continue or not
 ask:
@@ -68,6 +91,7 @@ ask:
     }
     else if (ans == 'N' || ans == 'n')
     {
+        printf("Program Terminated.\n");
         exit(0);
     }
     else
