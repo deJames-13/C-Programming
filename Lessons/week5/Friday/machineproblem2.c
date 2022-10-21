@@ -21,7 +21,7 @@ repeat:
     // PROCESS
     netAmt = price * quantity; // multiply base sa kung ilan binili, kung sampu edi times 10
     std = netAmt * TAX_RATE;   // tax
-    amt_due = netAmt + std;    // aadd ung tax sa total nung binili tapos mapupunta kay marcos ung tax
+    amt_due = netAmt + std;    // aadd ung tax sa total nung binili tapos mapupunta kay marc*s ung tax
     acc_std = acc_std + std;   // acc
 
     // OUTPUT
