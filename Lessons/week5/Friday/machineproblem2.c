@@ -12,6 +12,7 @@ void main()
 
 repeat:
     // INPUT
+    /* %f kase float */
     printf("\nEnter the price of the product: ");
     scanf("%f", &price);
     scanf("");
