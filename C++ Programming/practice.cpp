@@ -124,6 +124,6 @@ int main()
         }
 
     } while (answer == 'Y');
-    cout << "\nProgram stopped.\n";
+    cout << "\n-> Program stopped.\n";
     return 0;
 }
