@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+<<<<<<< HEAD
 int main()
 {
     int ROW = 5;
@@ -17,3 +18,9 @@ int main()
     }
     return 0;
 }
+=======
+int main(){
+    printf("Hell, World");
+    return 0;
+}
+>>>>>>> 3af433633dc78c05cc36458f91b272219eef1c0e
