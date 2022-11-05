@@ -6,14 +6,13 @@ using namespace std;
 int main()
 {
     int days = 64;
-    float cent = 0.01;
+    double cent = 0.01;
 
-    // cout << setprecision(3);
-    cout << "Day" << setw(15) << "Amount Owed\n";
+    cout << "Day" << setw(10) << "Amount Owed\n";
     for (int i = 1; i <= 64; i++)
     {
-        cout << setw(2) << setfill('0') << i << setw(15) << setfill(' ') << cent << "\n";
-        cent *= 2;
+        cout << setw(3) << i << setw(25) << cent << "\n";
+        cent = cent * 2;
     }
 
     return 0;
