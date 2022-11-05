@@ -15,10 +15,10 @@ int main()
     {
         ans = ""; // to reset the ans value
         system("cls");
-        // // CONSOLE HEADER
-        // cout << "*****************************************\n"
-        //      << "*\tCelsius to Farenheit Conversion\n"
-        //      << "*****************************************\n";
+         // CONSOLE HEADER
+         cout << "*****************************************\n"
+              << "*\tCelsius to Farenheit Conversion\n"
+              << "*****************************************\n";
 
         // INPUT
         cout << "\nEnter the value for Celsius: \t\t";

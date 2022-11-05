@@ -8,7 +8,7 @@ int main()
     int days = 64;
     double cent = 0.01;
 
-    cout << "Day" << setw(10) << "Amount Owed\n";
+    cout << "Day" << setw(25) << "Amount Owed\n";
     for (int i = 1; i <= 64; i++)
     {
         cout << setw(3) << i << setw(25) << cent << "\n";
