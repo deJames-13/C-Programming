@@ -3,22 +3,16 @@ using namespace std;
 
 int main()
 {
-    // Do While is a type of loop that executes the codeblock (codes na nasa loob ng {}) first before checking for the condition
+    int y = 0;
+    int sum = 0;
 
-    int num = 0;
-    cout << "DO-WHILE" << endl;
-    do
+    while (y <= 5)
     {
-        cout << "Guess the number: ";
-        cin >> num;
-        if (num != 69)
-        {
-            cout << num << " is not the number. "
-                 << "Try again\n";
-        }
-
-    } while (num != 69);
-    cout << "You guessed the best number! " << num << endl;
+        cout >> "Value of y: " << y << endl;
+        cout >> "Value of sum: " << sum << endl;
+        sum = sum + y;
+        y = y + 1;
+    }
 
     return 0;
 }

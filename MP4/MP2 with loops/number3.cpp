@@ -13,7 +13,7 @@ int main()
     do
     {
         ans = 0;
-        system("cls");
+        // system("cls");
 
         cout << "\nEnter the first number: ";
         cin >> num1;

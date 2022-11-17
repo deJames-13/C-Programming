@@ -14,8 +14,8 @@ int main()
     {
         ans = ' ';
 
-        cout << "Enter the length of the square: ";
-        cin >> length; /* code */
+        cout << "\nEnter the length of the square: ";
+        cin >> length;
 
         area = length * length;
 

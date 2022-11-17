@@ -14,7 +14,7 @@ int main()
     do
     {
         ans = ' ';
-        cout << "Enter the time (in seconds): ";
+        cout << "\nEnter the time (in seconds): ";
         cin >> time;
 
         DEPTH = 0.5 * g * time * time;
