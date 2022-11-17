@@ -27,7 +27,7 @@ int main()
         {
             /*
             row, col - horizontal (mapping)
-            col, row - veretical (mapping)
+            col, row - vertical (mapping)
 
             */
             sumR = sumR + array1[row][col]; // accumulates values from each row horizontally
@@ -50,7 +50,7 @@ int main()
             2 2 2
             3 3 3
         */
-        array1[row][3] = sumR; // inserts the sum of each rows (sumC) to the last column (array[row][3])
+        array1[row][3] = sumR; // inserts the sum of each rows (sumR) to the last column (array[row][3])
         /*
            0 1 2 3
            0 1 2 3
