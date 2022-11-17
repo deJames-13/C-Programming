@@ -68,7 +68,6 @@ int main()
         total = total + array1[row][3]; // 9 + 3 + 3 + 3 = 18
     }
     array1[3][3] = total;
-
     /*
         1 1 1 3
         1 1 1 3
