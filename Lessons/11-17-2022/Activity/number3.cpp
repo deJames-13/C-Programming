@@ -19,8 +19,7 @@ int main()
     };
 
     // INPUT
-    cout
-        << "Enter the values for grades: \n";
+    cout << "Enter the values for grades: \n";
     for (row = 0; row < 3; row++)
     {
         for (col = 0; col < 5; col++)

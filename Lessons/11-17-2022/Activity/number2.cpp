@@ -57,6 +57,5 @@ int main()
          << "\nThe minimum value is: " << min << endl
          << setw(22) << "Coordinates: "
          << "(" << min_x << ", " << min_y << ")" << endl;
-
     return 0;
 }

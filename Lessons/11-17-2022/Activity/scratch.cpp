@@ -1,46 +1,65 @@
 #include <iostream>
 #include <iomanip>
-#include <stdio.h>
 
 using namespace std;
 int main()
-
 {
-    int num[4][4] = {
-        {45, 89, 54},
-        {36, 100, 2},
-        {90, 3, 230},
-    };
-    int r, c, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
+	int num[3][4];
+	int r, c, sum, s = 999, h = 0, s_x = 0, s_y = 0, h_x = 0, h_y = 0;
+	
+	cout << "3 by 4 Array! " << endl << endl;
+	cout << "Input data "<< endl;
+	
+	for (r = 0; r <=2; r++)
+	{
+		for(c = 0; c <= 3; c++)
+		{
+			cin >> num[r][c];
+		}
+		
+		cout << endl;
+	}
+	
+	cout << "\nDatas inputted! " << endl;
+	for (r = 0; r <=2; r++)
+	{
+		for(c = 0; c <= 3; c++)
+		{
+			sum = sum + num[r][c];
+			cout << setw(5) << num[r][c];
+		}
+		
+		cout << endl;
+	}
+	
+	cout << "\nSmallest Number among the Inputted! " << endl;
+	for (r = 0; r <=2; r++)
+	{
+		for(c = 0; c <= 3; c++)
+		{
+			if (num[r][c]<= s){
+			s = num[r][c];}
+			s_x = r;
+			s_y = c;
+		}
+		
+	}
+	
+	cout << s << endl;
+	
+	cout<< "\nMaximum Number and Coordinates! " << endl;
+	for (r = 0; r <=2; r++)
+	{
+		for(c = 0; c <= 3; c++)
+		{
+			if (num[r][c] >= h){
+			h = num[r][c];}
+			h_x = r + 1;
+			h_y = c + 1;
+		}
+		
+	}
+	
+	cout << h << endl << "Coordinates" << endl << "Row" << h_x << "Column" << h_y;
 
-    for (r = 0; r <= 2; r++)
-    {
-        sum1 = 0;
-        for (c = 0; c <= 2; c++)
-        {
-            sum1 = sum1 + num[r][c];
-            num[r][3] = sum1;
-        }
-    }
-
-    for (r = 0; r <= 2; r++)
-    {
-        sum2 = 0;
-        for (c = 0; c <= 2; c++)
-        {
-            // sum2 = num[0][1] + num[1][1] + num[2][1];
-            sum2 = sum2 + num[c][r];
-            num[3][r] = sum2;
-        }
-    }
-
-    for (r = 0; r <= 3; r++)
-    {
-        for (c = 0; c <= 3; c++)
-        {
-            cout << setw(5) << num[r][c];
-        }
-        cout << endl;
-    }
-    return 0;
 }
