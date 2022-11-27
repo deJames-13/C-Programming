@@ -38,6 +38,11 @@ int main()
                     return 0;
                 }
 
+                Passing of Parameter
+                2 types
+                a. Formal Params - receives data value from formal params
+                b. Actual Params - parameters after the caller name
+
 
         - Procedure
 
