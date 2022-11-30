@@ -27,5 +27,5 @@ int main()
 
     } while (ans == 'y');
 
-    retuen 0;
+    return 0;
 }
