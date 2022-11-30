@@ -50,7 +50,21 @@
     "stdexcept": "c",
     "streambuf": "c",
     "typeinfo": "c",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "cstring": "cpp",
+    "ios": "cpp",
+    "xfacet": "cpp",
+    "xiosbase": "cpp",
+    "xlocale": "cpp",
+    "xlocinfo": "cpp",
+    "xlocmon": "cpp",
+    "xlocnum": "cpp",
+    "xloctime": "cpp",
+    "xmemory": "cpp",
+    "xstddef": "cpp",
+    "xstring": "cpp",
+    "xtr1common": "cpp",
+    "xutility": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
 }

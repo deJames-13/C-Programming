@@ -1,11 +1,14 @@
 #include <iostream>
 #include <iomanip>
+#include <windows.h>
+#include <conio.h>
 using namespace std;
 
 void getInput(float &ft, float &in);
 void convert(float ft, float in, float &ftm, float &ftcm, float &itm, float &itcm);
 void display(float ft, float in, float ftm, float ftcm, float itm, float itcm);
 void runProgram();
+void getStatus();
 
 int main()
 {
@@ -17,12 +20,17 @@ int main()
 void runProgram()
 {
     float feet, inches, feetToMeter, feetToCM, inchToMeter, inchToCM;
+    cout << "\nFeet/Inches -  Meter/Centimeter Conversion\n";
+
     // INPUT
     getInput(feet, inches);
     // PROCESS
     convert(feet, inches, feetToMeter, feetToCM, inchToMeter, inchToCM);
     // OUTPUT
     display(feet, inches, feetToMeter, feetToCM, inchToMeter, inchToCM);
+
+    // Ask to continue
+    getStatus();
 }
 
 void getInput(float &ft, float &in)
@@ -53,4 +61,27 @@ void display(float ft, float in, float ftm, float ftcm, float itm, float itcm)
          << setw(10) << "Feet: " << setw(10) << ft << setw(15) << ftm << setw(10) << ftcm << endl
          << setw(10) << "Inches: " << setw(10) << in << setw(15) << itm << setw(10) << itcm
          << endl;
+}
+
+void getStatus()
+{
+    char ans;
+    cout << "\nDo you want to continue?\n";
+    ans = tolower(getch());
+    cout << ans << "\n";
+    if (ans == 'y')
+    {
+        system("cls");
+        runProgram();
+    }
+    else if (ans == 'n')
+    {
+        cout << "\nProgram ended.\n";
+        exit(0);
+    }
+    else
+    {
+        system("cls");
+        getStatus();
+    }
 }
