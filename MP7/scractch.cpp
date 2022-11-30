@@ -1,32 +1,42 @@
-#include <iostream>
 #include <stdio.h>
+#include <iostream>
 #include <Math.h>
+
 using namespace std;
 
-float feett(float &habainch)
+float PutInit()
 {
-    float habaft;
-    cout << "Enter the length in Feet ";
-    cin >> habaft;
-    cout << "Enter the length in inches ";
-    cin >> habainch;
-    return (habaft);
-}
-float solving(float ft, float &centimeters, float habainch)
-{
-    float meters;
-    ft = feett(habainch);
-    meters = ft * 0.3048;
-    centimeters = habainch * 30.48;
-    return meters;
+    float fahrenheit;
+
+    cout << "Enter Temperature: ";
+    cin >> fahrenheit;
+    return (fahrenheit);
 }
 
-int main()
+float Computing(float &hot)
 {
-    float metertotal = 0, ft = 0;
-    float centimeters = 0, habainch = 0;
-    metertotal = solving(ft, centimeters, habainch);
-    cout << "Feet to meters: " << metertotal << endl;
-    cout << "Feet to centimeters: " << centimeters;
+    float celcius;
+
+    hot = PutInit();
+    celcius = (hot - 32) / 1.800;
+    return celcius;
+}
+
+int Printing()
+{
+    float faren, totalcelcius, hot;
+    faren = PutInit();
+    totalcelcius = Computing(hot);
+
+    cout << "The Farenheit is " << faren << endl;
+    cout << "The Temperature in Celcius is " << totalcelcius << endl;
+    return 0;
+}
+
+main()
+{
+
+    Printing();
+
     return 0;
 }
