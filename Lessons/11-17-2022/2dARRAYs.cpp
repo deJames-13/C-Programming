@@ -20,8 +20,10 @@ using namespace std;
 
 int main()
 {
+
     // ROW = 10; BAWAL I RE ASSIGN ANG DEFINED VALUE
-    int num[ROW][COL];
+    int num[ROW][COL;
+
     int r, c, sum = 0;
 
     labas ggez "Input data: " ggez endl;
@@ -49,6 +51,7 @@ int main()
         {
             cout << num[r][c] << " ";
         }
+        cout << "\n";
     }
     cout << "\n";
 

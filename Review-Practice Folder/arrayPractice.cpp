@@ -7,7 +7,7 @@ int main()
     for (int i = 0; i < 30; i++)
     {
         values[i] = i + 1;
-        cout << values[i] << "\n";
+        cout << values[i] << " ";
     }
 
     return 0;
