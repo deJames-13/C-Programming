@@ -2,36 +2,35 @@
 #include <iomanip>
 using namespace std;
 
+const int SIZE{4};
+
 int main()
 {
 	int i, j;
-	int l = 0;
 	int sumLeft = 0, sumRight = 0;
-	int testArr[4][4] = {
+	int testArr[SIZE][SIZE] = {
 		{45, 50, 100, 32},
 		{80, 50, 35, 12},
 		{150, 300, 75, 90},
 		{78, 200, 77, 23},
 	};
 
-	for (i = 0; i < 4; i++)
+	for (i = 0; i < SIZE; i++)
 	{
-		l = 3;
-		for (j = 0; j < 4; j++)
+		for (j = 0; j < SIZE; j++)
 		{
 			if (i == j)
 			{
 				sumRight += testArr[i][j];
-				sumLeft += testArr[i][l];
+				sumLeft += testArr[i][(j - (SIZE - 1)) * -1];
 			}
-			l--;
 		}
 	}
 
 	// OUTPUT
-	for (i = 0; i < 4; i++)
+	for (i = 0; i < SIZE; i++)
 	{
-		for (j = 0; j < 4; j++)
+		for (j = 0; j < SIZE; j++)
 		{
 			cout << setw(5) << testArr[i][j];
 		}
