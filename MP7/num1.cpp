@@ -19,7 +19,7 @@ int main()
 
 void runProgram()
 {
-    float feet, inches, feetToMeter, feetToCM, inchToMeter, inchToCM;
+    float feet = 0, inches = 0, feetToMeter = 0, feetToCM = 0, inchToMeter = 0, inchToCM = 0;
     cout << "\nFeet/Inches -  Meter/Centimeter Conversion\n";
 
     // INPUT
